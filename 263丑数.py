@@ -6,7 +6,7 @@ class Solution:
         """
         if num == 1:
             return True
-        # I like this method
+        # I like this method 
         dp = [0] * 100
         dp[0] = num
         for i in range(1,len(dp)):
