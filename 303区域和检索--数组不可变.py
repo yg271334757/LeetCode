@@ -7,7 +7,7 @@ class NumArray:
         self.nums = nums
         
 
-    def sumRange(self, i, j):
+
         """
         :type i: int
         :type j: int
