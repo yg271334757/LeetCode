@@ -5,8 +5,6 @@ class Solution:
         :rtype: int
         """
         tem = sorted(nums)
-        if tem == nums:
-            return 0
         l = 0
         r = len(nums) - 1
         while l < r:
@@ -16,3 +14,5 @@ class Solution:
                 r -= 1
             else:
                 return r - l + 1
+        if r == l:
+            return 0
