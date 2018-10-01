@@ -5,17 +5,9 @@ class Solution:
         :type B: str
         :rtype: int
         """
-        i = 1
+        i = len(B) // len(A)
         while i < len(B) // len(A) + 3:
-            C = A * i
-            if len(C) > len(B) + len(A):
-                if B in C:
-                    return i
-                else:
-                    return -1
-            elif B in C:
+            if B in A * i:
                 return i
-            elif len(C) == len(B):
-                if B in C:
-                    return i
             i += 1
+        return -1
