@@ -19,7 +19,7 @@ class Solution:
         res = {}
         for m in dictmap.keys():
             a = m.split('.')
-            for t in range(m.count('.')+1):
+            for _ in range(m.count('.')+1):
                 k = '.'.join(a)
                 if k in res:
                     res[k] += dictmap[m]
