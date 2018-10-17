@@ -12,9 +12,7 @@ class Solution:
                 if r - l >= 3:
                     res.append([l, r - 1])
                 l = r
-                r += 1
-            else:
-                r += 1
+            r += 1
         if r - l >= 3:
             res.append([l, r-1])
         return res
