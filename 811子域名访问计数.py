@@ -7,9 +7,9 @@ class Solution:
         times = []
         domain = []
         for i in cpdomains:
-            a = i.split()
-            times.append(int(a[0]))
-            domain.append(a[1])
+            c = i.split()
+            times.append(int(c[0]))
+            domain.append(c[1])
         dictmap = {}
         for j, value in enumerate(domain):
             if value not in dictmap:
