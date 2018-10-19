@@ -4,7 +4,7 @@ class Solution:
         :type A: List[int]
         :type B: List[int]
         :rtype: List[int]
-        """
+        """ #
         x = (sum(A) - sum(B)) // 2
         B = set(B)
         for a in A:
